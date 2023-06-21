@@ -3,3 +3,11 @@ footer {
     padding: 8px;
     list-style-type: none;
 }
+
+.logo{
+    height: 300px;
+    width: 300px;
+    border: white;
+    border-radius: 10px;
+    margin-left: auto;
+}
