@@ -27,3 +27,16 @@ footer {
 .style-font {
     font-family: 'Caprasimo', cursive;
 }
+
+section {
+    background-color: lightgrey;
+}
+
+.navbar {
+    color: white;
+}
+
+.underline  {
+    text-decoration: underline;
+}
+
