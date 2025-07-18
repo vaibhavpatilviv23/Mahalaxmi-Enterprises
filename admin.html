@@ -5,104 +5,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mhalaxmi Enterprises | Admin</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="icon" href="media/Logo 2 ME.png" type="image/x-icon">
+    <title>Mahalaxmi Enterprises | Admin Panel & GitHub Access</title>
+    <link rel="icon" href="media/Mahalaxmi Enterprises - Admin Panel Logo.png" type="image/x-icon">
     <meta name="description"
-        content="Shop mobile and computer accessories, spare parts, and more at wholesale prices with Mahalaxmi Enterprises. Trusted by mobile retailers across India for quality products and reliable service.">
+        content="Access the Mahalaxmi Enterprises admin dashboard for streamlined project management, GitHub repository links, and backend controls.">
+    <!--Tailwind CSS CDN link-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body data-bs-theme="blue">
-    <nav class="navbar navbar-expand-lg bg-primary px-3 " id="nav">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Mahalxmi Enterprises | Administration</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="index.html">Home</a>
-                    </li>
-
-                </ul>
-            </div>
+<body class="bg-gray-300">
+    <!--Navbar-->
+    <nav class="navbar bg-red-500 text-white md:text-lg lg:text-xl font-bold p-3">
+        <div class="flex items-center justify-between">
+            <!--Logo-->
+            <a href="#">Mahalaxmi Enterprises | Administration</a>
+            <!--Home Front End page link-->
+            <a href="https://mahalaxmi-enterprises.netlify.app/" target="_blank">Home</a>
         </div>
     </nav>
 
-    <section class="container-fluid py-3 px-3  text-center">
-        <br>
-        <h5 class="text-center">Github Backend</h5>
+    <!--Github repo links cards-->
+    <section class="py-3 px-5">
+        <h5 class="text-center text-lg font-bold">Github repository links</h5>
 
-        <p>View Back-end options for Mahalxmi Enterprises website.</p>
+        <p class="text-center">Github Repo links for Mahalxmi Enterprises website.</p>
 
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-                <div class="card bg-warning border-black">
-
-                    <div class="card-body">
-                        <h5 class="card-title">Github repository</h5>
-                        <hr>
-                        <p class="card-text">Github repository where the webisite files are saved and hosted.</p>
-                        <a href="https://github.com/vaibhavpatilviv23/Mahalaxmi-Enterprises" target="_blank"
-                            class="btn btn-success border-1 border-black mb-2">Open repository</a>
-                    </div>
-                </div>
+        <!--Github Repo links cards with reponsive design-->
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 space-y-3 my-3 gap-5 mx-5">
+            <div class="text-center p-4 space-y-3 bg-blue-400 rounded-md border-3 max-w-100">
+                <h5 class="font-bold">Github repository</h5>
+                <hr>
+                <p>Github repository where the webisite files are saved and hosted.</p>
+                <button class="border-2 p-2 rounded-md bg-yellow-300 hover:bg-yellow-400 active:bg-yellow-400">
+                    <a href="https://github.com/vaibhavpatilviv23/Mahalaxmi-Enterprises" target="_blank">Open
+                        repository</a>
+                </button>
             </div>
 
-            <div class="col">
-                <div class="card bg-warning border-black">
+            <div class="text-center p-4 space-y-3 bg-blue-400 rounded-md border-3 max-w-100">
+                <h5 class="font-bold">Github issues</h5>
+                <hr>
+                <p>Issues are used to track todos, bugs, feature requests, and more. </p>
+                <button class="border-2 p-2 rounded-md bg-yellow-300 hover:bg-yellow-400 active:bg-yellow-400">
+                    <a href="https://github.com/vaibhavpatilviv23/Mahalaxmi-Enterprises/issues" target="_blank">Open
+                        issues</a>
+                </button>
 
-                    <div class="card-body">
-                        <h5 class="card-title">Github issues</h5>
-                        <hr>
-                        <p class="card-text">Issues are used to track todos, bugs, feature requests, and more. </p>
-                        <a href="https://github.com/vaibhavpatilviv23/Mahalaxmi-Enterprises/issues" target="_blank"
-                            class="btn btn-success border-1 border-black mb-2">Open issues</a>
-                    </div>
-                </div>
             </div>
 
-            <div class="col">
-                <div class="card bg-warning border-black">
+            <div class="text-center p-4 space-y-3 bg-blue-400 rounded-md border-3 max-w-100">
+                <h5 class="font-bold">Github network graph</h5>
+                <hr>
+                <p>Timeline of the most recent commits to this repository and its network
+                    ordered by most recently pushed to.
 
-                    <div class="card-body">
-                        <h5 class="card-title">Github network graph</h5>
-                        <hr>
-                        <p class="card-text">Timeline of the most recent commits to this repository and its network
-                            ordered by most recently pushed to.
+                </p>
+                <button class="border-2 p-2 rounded-md bg-yellow-300 hover:bg-yellow-400 active:bg-yellow-400">
+                    <a href="https://github.com/vaibhavpatilviv23/Mahalaxmi-Enterprises/network" target="_blank">Open
+                        network graph</a>
+                </button>
 
-                        </p>
-                        <a href="https://github.com/vaibhavpatilviv23/Mahalaxmi-Enterprises/network" target="_blank"
-                            class="btn btn-success border-1 border-black mb-2">Open network graph</a>
-                    </div>
-                </div>
             </div>
 
-            <div class="col">
-                <div class="card bg-warning border-black">
+            <div class="text-center p-4 space-y-3 bg-blue-400 rounded-md border-3 max-w-100">
+                <h5 class="font-bold">Github deployements</h5>
+                <hr>
+                <p>List of updates and deployements to the repository.</p>
+                <button class="border-2 p-2 rounded-md bg-yellow-300 hover:bg-yellow-400 active:bg-yellow-400">
+                    <a href="https://github.com/vaibhavpatilviv23/Mahalaxmi-Enterprises/deployments"
+                        target="_blank">Open
+                        deployements</a>
+                </button>
 
-                    <div class="card-body">
-                        <h5 class="card-title">Github deployements</h5>
-                        <hr>
-                        <p class="card-text">List of updates and deployements to the repository.
-
-                        </p>
-                        <a href="https://github.com/vaibhavpatilviv23/Mahalaxmi-Enterprises/deployments" target="_blank"
-                            class="btn btn-success border-1 border-black mb-2">Open deployements</a>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
-
-    <!--Bootstrap CDN-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
 
 </body>
 
